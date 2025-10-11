@@ -39,7 +39,11 @@ class Program
 
             else if (choice == "2")
             {
-                Console.Write("Displaying the total data entries:");
+                Console.WriteLine("Your journal entries:");
+                foreach (Entry entry in entries)
+                {
+                    Console.WriteLine($"{entry._date} | {entry._prompt} | {entry._entry}");
+                }
             }
 
             else if (choice == "3")
