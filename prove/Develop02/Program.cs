@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Security.Cryptography.X509Certificates;
+
+
+//I added a prompt that asked the user their mood for the day.
+//This goes along with 1. Write a new entry:
 
 class Program
 {
@@ -28,11 +31,15 @@ class Program
                 Console.Write($"{prompt}");
                 string entry = Console.ReadLine();
 
+                Console.WriteLine("How are you feeling today?");
+                string mood = Console.ReadLine();
+
                 Entry newEntry = new Entry
                 {
                     _date = DateTime.Now.ToShortDateString(),
                     _prompt = prompt,
-                    _entry = entry
+                    _entry = entry,
+                    _mood = mood
                 };
                 entries.Add(newEntry);
             }
@@ -48,7 +55,8 @@ class Program
 
             else if (choice == "3")
             {
-                string filename = "journal.txt";
+                Console.WriteLine("Enter a filename to save:");
+                string filename = Console.ReadLine();
 
                 using (StreamWriter outputFile = new StreamWriter(filename))
                 {
@@ -80,7 +88,7 @@ class Program
                 break;
             }
 
-            }
         }
     }
+}
     
