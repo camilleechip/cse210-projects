@@ -1,5 +1,4 @@
 using System;
-using System.Formats.Asn1;
 
 
 //I asked the user for a scripture instead of supplying one.
@@ -43,6 +42,14 @@ class Program
             if (string.IsNullOrEmpty(choice))
             {
                 scripture.HideWords(1);
+
+                if (scripture.AllWordsHidden())
+                {
+                    Console.Clear();
+                    scripture.DisplayScripture();
+                    Console.WriteLine("All words hidden!");
+                    break;
+                }
             }
 
             else if (choice == "quit")
