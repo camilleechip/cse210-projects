@@ -2,7 +2,7 @@ using System;
 
 
 //I asked the user for a scripture instead of supplying one.
-//This scripture is then saved to a file.
+
 class Program
 {
     static void Main(string[] args)
