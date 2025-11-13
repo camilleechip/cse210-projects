@@ -34,7 +34,7 @@ public class ListingActivity : Activity
         Console.WriteLine($"{question}");
 
         List<string> userInput = new List<string>();
-        DateTime endTime = DateTime.Now.AddSeconds(Duration);
+        DateTime endTime = DateTime.Now.AddSeconds(GetDuration());
 
         while (DateTime.Now < endTime)
         {

@@ -34,7 +34,7 @@ public class ReflectionActivity : Activity
     {
         GreetingMessage();
 
-        DateTime endTime = DateTime.Now.AddSeconds(Duration);
+        DateTime endTime = DateTime.Now.AddSeconds(GetDuration());
 
         while (DateTime.Now < endTime)
         {

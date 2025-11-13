@@ -13,9 +13,9 @@ public class Activity
         _duration = duration;
     }
 
-    public int Duration
+    public int GetDuration()
     {
-        get { return _duration; }
+        return _duration;
     }
 
     public void GreetingMessage()
