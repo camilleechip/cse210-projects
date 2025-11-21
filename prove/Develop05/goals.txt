@@ -1,0 +1,3 @@
+ChecklistGoal,Attend the temple.,perform ordinances,50,False,0,5,50
+ChecklistGoal,Attend the temple.,perform ordinances,50,False,0,5,50
+SimpleGoal,vacuum,vacuum the house.,50,False
