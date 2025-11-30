@@ -30,8 +30,8 @@ class Program
             foreach (Comment c in v.GetComments())
             {
                 Console.WriteLine($"{c.GetCommentName()}- {c.GetCommentText()}");
-                Console.WriteLine();
             }
+            Console.WriteLine();
         }
     }
 }
