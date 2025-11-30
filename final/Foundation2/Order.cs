@@ -25,7 +25,7 @@ public class Order
 
         foreach (Product p in _products)
         {
-            label += $"{p.GetProductName()}, ID: {p.GetProductId()}";
+            label += $" {p.GetProductName()}, ID: {p.GetProductId()} |";
         }
         
         return label.Trim();
