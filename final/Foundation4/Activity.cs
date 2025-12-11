@@ -25,6 +25,7 @@ public abstract class Activity
 
     public string GetSummary()
     {
+        Console.WriteLine();
         return  $"{GetDateTime():dd MMM yyyy} {_activityType} ({GetLength()} min)- Distance {GetDistance():F1} miles,\nSpeed {GetSpeed():F1} mph, Pace: {GetPace():F1} min per mile.";
     }
 
