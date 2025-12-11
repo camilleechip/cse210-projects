@@ -4,9 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Address lectureAddress = new Address("Eagle Mountain", "UT", "USA");
-        Address receptionAddress = new Address("Riverton", "UT", "USA");
-        Address outdoorAddress = new Address("Saratoga Springs", "UT", "USA");
+        Address lectureAddress = new Address("552 Circle", "Eagle Mountain", "UT", "USA");
+        Address receptionAddress = new Address("225 Drive", "Riverton", "UT", "USA");
+        Address outdoorAddress = new Address("782 Rain", "Saratoga Springs", "UT", "USA");
 
         Lecture lecture = new Lecture("Economics 101", "Introductory course that covers concepts of supply and demand.",
             new DateTime(2025, 12, 19, 14, 0, 0), lectureAddress, "Professor Huggins", 50);

@@ -4,13 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Address address1 = new Address("552 Drive", "ID", "USA");
+        Address address1 = new Address("552 Drive", "Rexburg", "ID", "USA");
         Customer customer1 = new Customer("Quinn Huggins", address1);
 
-        Address address2 = new Address("659 Circle", "UT", "USA");
+        Address address2 = new Address("659 Circle", "Eagle Mountain", "UT", "USA");
         Customer customer2 = new Customer("Camille Huggins", address2);
 
-        Address address3 = new Address("7-75 Midori", "Osaka", "Japan");
+        Address address3 = new Address("7-75 Midori", "Osaka", "Kansai Region", "Japan");
         Customer customer3 = new Customer("Aoi Tsubaki", address3);
 
         Product product1 = new Product("Laptop", 564875, 1, 1400);
